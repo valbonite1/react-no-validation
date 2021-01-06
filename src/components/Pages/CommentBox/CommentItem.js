@@ -1,43 +1,40 @@
-import React, { useEffect, useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
-import AddModal from './AddModal';
-import initialState from './InitialState';
+/* ITO YUNG COMPONENT WHERE WE WILL RENDER THE DATA THAT WE GET FROM THE AddModal.js Component */
 
-const CommentItem = () => {
+import React, {useState} from 'react';
 
+ 
+const CommentItem = ( { deleteRecom, editRow, recommendations } ) => {
 
-  useEffect(()=>{
+   /* ========================HANDLES MODAL FUNCTION======================== */
 
-    const data = localStorage.getItem('recommendations')
-    
-    if(data){
-      setRecommendations(JSON.parse(data))
-     }
+  // What is a modal? Modal yun yung kapag may priness kang button may lalabas na parang body 
 
-    },[])
+  // Ito yung set of functions na maghahandle sa pag open-close ng modal natin 
 
-  const [recommendations, setRecommendations] = useState(initialState)
+  const [modalOpen, setModalOpen] = useState(false); //We initialize the state of the modal which is false. meaning kapag false. nakaclose siya
+
+  // handleModalOpen will open the modal. nakalink to siya sa button na may fas fa-pen na name 
+
+  const handleModalOpen = () => {
+    setModalOpen(!false);
+  }
+
+  // this will just close the modal. nilink ko to siya sa Cancel button. 
+
+  const handleModalClose = () => {
+    setModalOpen(false);
+  }
+
+  // style lang to ng kulay ng backgorund color sa likod ng modal. so parang magffade yung likod and magddark and magkakaroon ng focus sa modal mismo 
   
-  const addRecom = (firstName, lastName, comment) => {
-    setRecommendations([...recommendations, { id: uuidv4(), firstName, lastName, comment}])
-  }
 
-  const deleteRecom = (index) => {
-    let newRecom = recommendations;
-    newRecom.splice(index, 1);
-    setRecommendations([...newRecom]);
-  }
 
-  useEffect(() => {
-    let inputData = JSON.stringify(recommendations);
-    localStorage.setItem('recommendations', inputData);
-  }, [recommendations])
+  /* ================================================ */
 
   return(
     <>
-      <AddModal addRecom={addRecom}/>
       <ul className='comment-list'>
-        {recommendations.map( (recom, index) => {
+        {recommendations.map((recom, index) => {
           return(
             <li key={recom.id}>
               <div className='comment-icon'>
@@ -52,7 +49,7 @@ const CommentItem = () => {
                   <p>{recom.comment}</p>
                 </div>
                 <div className='comment-btn'>
-                  <button className='btn-edit'><i className='far fa-edit'></i></button>
+                  <button className='btn-edit' onClick={() => editRow(recom)}><i className='far fa-edit'></i></button>
                   <button onClick={() => deleteRecom(index)} className='btn-trash'><i className='far fa-trash-alt'></i></button>
                 </div>
               </div>
