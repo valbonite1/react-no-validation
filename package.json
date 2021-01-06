@@ -1,5 +1,5 @@
-{ 
-  "homepage" : "https://valbonite1.github.io/profile-host-two",
+{
+  "homepage": "https://valbonite1.github.io/profile-with-edit",
   "name": "react-profile",
   "version": "0.1.0",
   "private": true,
@@ -20,8 +20,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "predeploy" : "yarn run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
