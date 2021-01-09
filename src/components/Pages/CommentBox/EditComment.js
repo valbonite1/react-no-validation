@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Modal from 'react-modal';
 
 const EditComment = ( props ) => {
 
@@ -25,7 +24,7 @@ const EditComment = ( props ) => {
 
   return(
     <>
-    <div className='modal-container'>
+    <div className='modal-container' id='edit'>
         <div className='modal-header'>
           <h2>What changes do you want to make?</h2>
           <p>Update your comment here!</p>

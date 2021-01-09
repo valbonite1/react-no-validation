@@ -5,7 +5,7 @@
 }
 
 .dark {
-  background-color: var(--text-primary);
+  background-color: var(--dark-blue);
 }
 
 .sec-orie {
@@ -37,16 +37,16 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 5rem;
+  padding: 3rem;
   justify-content: center;
   align-items: flex-start;
 }
 
 .top-line {
   color: var(--light-green);
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .top-line-dark {

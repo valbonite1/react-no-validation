@@ -7,10 +7,11 @@ import Work from '../Work/Work';
 import CommentBox from '../CommentBox/CommentBox';
 
 const Home = () => {
+
   return(
     <>
       <HeroSection />
-      <About />
+      <About  />
       <Education />
       <Hobbies />
       <Work />

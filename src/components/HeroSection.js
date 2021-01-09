@@ -1,5 +1,6 @@
 import React from 'react';
 import './HeroSection.css';
+import HeroSectionSvg from './HeroSectionSvg';
 
 const HeroSection = () => {
     return(
@@ -11,6 +12,7 @@ const HeroSection = () => {
                     <h5>Software Engineer Trainee | Frontend Developer</h5>
                 </div>
                 <div className="hero-img">  
+                    <HeroSectionSvg className='hero-svg' alt='herosection' />
                 </div>
             </div>
         </>

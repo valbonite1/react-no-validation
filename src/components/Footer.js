@@ -5,7 +5,7 @@ import * as RiIcons from 'react-icons/ri';
 const Footer = () => {
   return(
     <>
-      <div className='footer'>
+      <div className='footer' id='contact'>
         <div className='footer-name'>
           <p><em>Val Augustus Larong</em></p>
           <p><b>Bonite</b></p>
@@ -20,6 +20,11 @@ const Footer = () => {
           <h5>Made with love | <i className='fas fa-copyright'></i> Copyright 2020</h5> 
         </div>
       </div>
+      <form>
+
+        <input type='text' required></input>
+        <button type='submit' onClick={(e) => console.log('hello')}>hello</button>
+      </form>
     </>
   );
 }

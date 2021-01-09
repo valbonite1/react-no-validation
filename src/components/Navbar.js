@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import DarkMode from './DarkMode/DarkMode';
 import './Navbar.css';
 import * as RiIcons from 'react-icons/ri';
 
@@ -30,7 +31,7 @@ const Navbar = () => {
     return(
         <>   
         <nav className={navbar ? 'navbar scrolled' : 'navbar'}>
-            <a href="#"><RiIcons.RiVuejsLine className='logo' /></a>
+            <a href="#" className='navbar-logo'><RiIcons.RiVuejsLine className={navbar ? 'logo scrolled' : 'logo'} /></a>
             <div className='menu' onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-stream'} />
             </div>
@@ -42,13 +43,16 @@ const Navbar = () => {
                         <a href="#">Home</a>
                     </li>
                     <li className="nav-item" onClick={closeMobMenu}>
-                        <a href="#">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li className="nav-item" onClick={closeMobMenu}>
-                        <a href="#">Work</a>
+                        <a href="#work">Work</a>
                     </li>
                     <li className="nav-item" onClick={closeMobMenu}>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li className="nav-item" onClick={closeMobMenu}>
+                        <DarkMode />
                     </li>
                 </ul>
                 <ul className='socials'>

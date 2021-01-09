@@ -25,3 +25,5 @@ const initialState = [
 ];
 
 export default initialState;
+
+//initial data used to have default comments in the react-app

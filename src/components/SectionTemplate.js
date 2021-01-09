@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './SectionTemplate.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 const SectionTemplate = ({
+  id,
   bgColor,
   secOrie,
   topLine,
@@ -15,9 +18,16 @@ const SectionTemplate = ({
   img,
   alt
 }) => {
+
+  useEffect(() => {
+
+    Aos.init({ duration: 1000})
+
+  }, [])
+  
   return(
     <>
-      <div className={bgColor ? 'section-container' : 'section-container dark'}>
+      <div className={bgColor ? 'section-container' : 'section-container dark'} id={id} data-aos='fade' >
         <div className={secOrie? 'sec-orie' : 'reverse'}>
           <div className='img-area'>
             <img src={img} alt={alt} className='section-img' />
