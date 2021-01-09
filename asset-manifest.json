@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-no-validation/static/css/main.1d81be0c.chunk.css",
+    "main.js": "/react-no-validation/static/js/main.44ea6a1e.chunk.js",
+    "main.js.map": "/react-no-validation/static/js/main.44ea6a1e.chunk.js.map",
+    "runtime-main.js": "/react-no-validation/static/js/runtime-main.4de15e9c.js",
+    "runtime-main.js.map": "/react-no-validation/static/js/runtime-main.4de15e9c.js.map",
+    "static/css/2.30fbed10.chunk.css": "/react-no-validation/static/css/2.30fbed10.chunk.css",
+    "static/js/2.89b44931.chunk.js": "/react-no-validation/static/js/2.89b44931.chunk.js",
+    "static/js/2.89b44931.chunk.js.map": "/react-no-validation/static/js/2.89b44931.chunk.js.map",
+    "index.html": "/react-no-validation/index.html",
+    "static/css/2.30fbed10.chunk.css.map": "/react-no-validation/static/css/2.30fbed10.chunk.css.map",
+    "static/css/main.1d81be0c.chunk.css.map": "/react-no-validation/static/css/main.1d81be0c.chunk.css.map",
+    "static/js/2.89b44931.chunk.js.LICENSE.txt": "/react-no-validation/static/js/2.89b44931.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4de15e9c.js",
+    "static/css/2.30fbed10.chunk.css",
+    "static/js/2.89b44931.chunk.js",
+    "static/css/main.1d81be0c.chunk.css",
+    "static/js/main.44ea6a1e.chunk.js"
+  ]
+}
