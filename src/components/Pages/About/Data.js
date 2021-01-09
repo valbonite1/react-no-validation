@@ -7,7 +7,7 @@ export const sectionAbout = {
   textColor: false,
   textDesc: 'I am an architecture graduate with a passion for design. Combining my interest in programming and the passion for design paved my way towards a software development career.',
   textDescTwo: '',
-  img: 'profile-with-edit/images/about-picture.jpg',
+  img: 'images/about-picture.jpg',
   alt: 'profile-picture'
 };
 

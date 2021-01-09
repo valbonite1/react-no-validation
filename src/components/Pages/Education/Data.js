@@ -9,7 +9,7 @@ export const sectionEducation = {
   textColor: true,
   textDesc: 'I graduated Cum Laude from the University of the Philippines-Diliman. I took up Bachelor of Science in Architecture as my undergraduate degree. However, I am currently pursuing a career in software development.',
   textDescTwo: 'I went to Philippine Science High School-Central Mindanao Campus during my highschool.',
-  img: 'profile-with-edit/images/university.jpg',
+  img: 'images/university.jpg',
   alt: 'university'
 };
 
